@@ -1,0 +1,21 @@
+/* মার্জিন প্যাডিং রিসেট করা হচ্ছে যাতে ব্রাউজারের ডিফল্ট স্পেস না থাকে */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+.navbar { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px 150px; 
+}
+
+.nav-tittle { font-size: 32px; font-weight: 800; font-family: sans-serif; }
+.text-primary { color: #5D5FEF; }
+
+.btn-primary { 
+    background-color: #5D5FEF; 
+    color: white; 
+    border: none; 
+    padding: 12px 30px; 
+    border-radius: 8px; 
+    cursor: pointer; 
+}
