@@ -232,3 +232,73 @@
 .full-width {
     width: 100%; /* বাটনটি পুরো চওড়া করার জন্য */
 }
+/* ইউজার ফিডব্যাক সেকশন স্টাইল */
+.feedback-section {
+    padding: 80px 150px;
+}
+
+.feedback-grid {
+    display: flex;
+    justify-content: center; /* কার্ডগুলোকে মাঝখানে রাখার জন্য */
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.review-card {
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    padding: 30px;
+    border-radius: 16px;
+    width: 380px; /* কার্ডের চওড়া নির্ধারণ */
+    transition: transform 0.3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-10px); /* হোভার করলে একটু উপরে উঠবে */
+}
+
+.star-rating {
+    margin-bottom: 15px;
+}
+
+.star-rating img {
+    width: 20px; /* স্টার আইকনের সাইজ */
+    margin-right: 2px;
+}
+
+.review-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #181818;
+}
+
+.review-text {
+    font-size: 16px;
+    color: #757575;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.reviewer-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.reviewer-img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%; /* ইমেজ গোল করার জন্য */
+}
+
+.reviewer-name {
+    font-weight: 700;
+    font-size: 16px;
+    color: #181818;
+}
+
+.review-date {
+    font-size: 14px;
+    color: #A0A0A0;
+}
