@@ -114,3 +114,40 @@
     margin-bottom: 35px;
     line-height: 1.6;
 }
+/* প্রোডাক্টিভ ইউজার সেকশন স্টাইল */
+.productive-section {
+    padding: 80px 150px;
+}
+
+.stats-container {
+    background-color: #F0F2FF; /* সেকশন আলাদা করার জন্য ব্যাকগ্রাউন্ড কালার */
+    padding: 60px 40px;
+    border-radius: 24px;
+    text-align: center;
+}
+
+.stats-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #181818;
+    margin-bottom: 50px;
+}
+
+.stats-grid {
+    display: flex;
+    justify-content: space-around; /* ৩টি ডেটা পাশাপাশি সমদূরত্বে রাখতে */
+    align-items: center;
+}
+
+.stat-number {
+    font-size: 48px;
+    font-weight: 800;
+    color: #5D5FEF; /* প্রাইমারি কালার */
+    margin-bottom: 10px;
+}
+
+.stat-subtitle {
+    font-size: 18px;
+    color: #757575;
+    font-weight: 600;
+}
