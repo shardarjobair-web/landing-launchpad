@@ -43,3 +43,26 @@
 .btn-primary:hover {
     background-color: #4648c1;
 }
+/* ব্যানার স্টাইল */
+.header {
+    background-image: url('../Assets/Hero-bg.png'); /* আপনার ব্যাকগ্রাউন্ড ইমেজ পাথ */
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh; /* পুরো স্ক্রিন জুড়ে দেখানোর জন্য */
+}
+
+.banner {
+    text-align: center; /* হেডিং এবং বাটনকে সেন্টারে রাখতে */
+    padding-top: 150px; /* নেভবার থেকে নিচে নামানোর জন্য */
+}
+
+.banner-tittle {
+    font-size: 60px;
+    font-weight: 800;
+    color: #181818;
+    margin-bottom: 30px; /* বাটনের সাথে গ্যাপ রাখার জন্য */
+    line-height: 1.2;
+}
+
+/* বাটনটি আগে থেকেই ডিফাইন করা থাকলে নতুন করে দরকার নেই, 
+   তবে সেন্টারিং নিশ্চিত করতে .banner এর ভেতর থাকা জরুরি */
