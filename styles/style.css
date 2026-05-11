@@ -66,3 +66,43 @@
 
 /* বাটনটি আগে থেকেই ডিফাইন করা থাকলে নতুন করে দরকার নেই, 
    তবে সেন্টারিং নিশ্চিত করতে .banner এর ভেতর থাকা জরুরি */
+   /* অ্যাকশন সেকশন স্টাইল */
+.action-section {
+    padding: 100px 150px;
+}
+
+.action-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px; /* টেক্সট এবং ইমেজের মাঝখানের দূরত্ব */
+}
+
+.action-content {
+    flex: 1; /* টেক্সট অংশটি যতটুকু জায়গা দরকার নিবে */
+}
+
+.action-img {
+    flex: 1;
+}
+
+.action-img img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.section-title {
+    font-size: 45px;
+    font-weight: 700;
+    color: #181818;
+    margin-bottom: 20px;
+}
+
+.section-description {
+    font-size: 18px;
+    color: #757575;
+    margin-bottom: 35px;
+    line-height: 1.6;
+}
