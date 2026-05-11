@@ -1,20 +1,31 @@
-/* প্রজেক্টের বেসিক সেটআপ */
-.open-sans-normal {
-    font-family: "Open Sans", sans-serif;
+/* বেসিক রিসেট */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-.text-primary {
-    color: #5D5FEF;
+.open-sans-normal {
+    font-family: "Open Sans", sans-serif;
+}
+
+/* হেডার এবং ব্যাকগ্রাউন্ড ইমেজ সেটআপ */
+.header {
+    /* ইমেজ পাথ আপনার ফোল্ডার স্ট্রাকচার অনুযায়ী Assets/Hero-bg.png দেওয়া হয়েছে */
+    background:url('../Assets/Hero-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* পুরো স্ক্রিন জুড়ে থাকবে */
+    width: 100%;
 }
 
 /* নেভিগেশন স্টাইল */
 .navbar {
     display: flex;
-    justify-content: space-between; /* লোগো বামে এবং বাটন ডানে পাঠাতে */
+    justify-content: space-between;
     align-items: center;
-    padding: 20px 150px; /* দুই পাশে গ্যাপ রাখার জন্য */
+    padding: 30px 150px;
 }
 
 .nav-tittle {
@@ -23,11 +34,29 @@
     letter-spacing: 1px;
 }
 
+.text-primary {
+    color: #5D5FEF;
+}
+
 .navbar ul {
     list-style: none;
 }
 
-/* বাটন স্টাইল */
+/* ব্যানার টেক্সট স্টাইল */
+.banner {
+    text-align: center;
+    padding-top: 120px;
+}
+
+.banner-tittle {
+    font-size: 60px;
+    font-weight: 800;
+    color: #181818;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+/* বাটন স্টাইল এবং এনিমেশন */
 .btn-primary {
     background-color: #5D5FEF;
     color: white;
@@ -37,36 +66,15 @@
     border-radius: 8px;
     border: none;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease; /* এনিমেশনের জন্য */
 }
 
 .btn-primary:hover {
     background-color: #4648c1;
+    transform: scale(1.05); /* হালকা বড় হবে */
+    box-shadow: 0 10px 20px rgba(93, 95, 239, 0.3);
 }
-/* ব্যানার স্টাইল */
-.header {
-    background-image: url('../Assets/Hero-bg.png'); /* আপনার ব্যাকগ্রাউন্ড ইমেজ পাথ */
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh; /* পুরো স্ক্রিন জুড়ে দেখানোর জন্য */
-}
-
-.banner {
-    text-align: center; /* হেডিং এবং বাটনকে সেন্টারে রাখতে */
-    padding-top: 150px; /* নেভবার থেকে নিচে নামানোর জন্য */
-}
-
-.banner-tittle {
-    font-size: 60px;
-    font-weight: 800;
-    color: #181818;
-    margin-bottom: 30px; /* বাটনের সাথে গ্যাপ রাখার জন্য */
-    line-height: 1.2;
-}
-
-/* বাটনটি আগে থেকেই ডিফাইন করা থাকলে নতুন করে দরকার নেই, 
-   তবে সেন্টারিং নিশ্চিত করতে .banner এর ভেতর থাকা জরুরি */
-   /* অ্যাকশন সেকশন স্টাইল */
+/* অ্যাকশন সেকশন স্টাইল */
 .action-section {
     padding: 100px 150px;
 }
@@ -105,200 +113,4 @@
     color: #757575;
     margin-bottom: 35px;
     line-height: 1.6;
-}
-/* প্রোডাক্টিভ ইউজার সেকশনের স্টাইল */
-.productive-section {
-    padding: 80px 150px; /* ডানে-বামে এবং উপরে-নিচে পর্যাপ্ত জায়গা রাখার জন্য */
-}
-
-.stats-container {
-    background-color: #F0F2FF; /* হালকা নীল ব্যাকগ্রাউন্ড যা সেকশনটিকে আলাদা করবে */
-    padding: 60px 40px;
-    border-radius: 24px; /* কোণাগুলো গোলাকার করার জন্য */
-    text-align: center; /* সব টেক্সট মাঝখানে রাখার জন্য */
-}
-
-.stats-title {
-    font-size: 32px;
-    font-weight: 700;
-    color: #181818;
-    margin-bottom: 50px; /* টাইটেল থেকে নিচের নম্বরগুলোর দূরত্ব */
-}
-
-.stats-flex {
-    display: flex; /* নম্বরগুলোকে পাশাপাশি সারিবদ্ধ করতে */
-    justify-content: space-around; /* ৩টি বক্সের মাঝে সমান গ্যাপ রাখতে */
-    align-items: center;
-}
-
-.stat-number {
-    font-size: 48px;
-    font-weight: 800;
-    color: #5D5FEF; /* লোগোর সাথে মিল রেখে বেগুনি রঙ */
-    margin-bottom: 10px;
-}
-
-.stat-subtitle {
-    font-size: 18px;
-    color: #757575;
-    font-weight: 600;
-}
-/* প্রোডাক্টিভ ইউজার সেকশনের স্টাইল */
-.productive-section {
-    padding: 80px 150px; /* ডানে-বামে এবং উপরে-নিচে পর্যাপ্ত জায়গা রাখার জন্য */
-}
-
-.stats-container {
-    background-color: #F0F2FF; /* হালকা নীল ব্যাকগ্রাউন্ড যা সেকশনটিকে আলাদা করবে */
-    padding: 60px 40px;
-    border-radius: 24px; /* কোণাগুলো গোলাকার করার জন্য */
-    text-align: center; /* সব টেক্সট মাঝখানে রাখার জন্য */
-}
-
-.stats-title {
-    font-size: 32px;
-    font-weight: 700;
-    color: #181818;
-    margin-bottom: 50px; /* টাইটেল থেকে নিচের নম্বরগুলোর দূরত্ব */
-}
-
-.stats-flex {
-    display: flex; /* নম্বরগুলোকে পাশাপাশি সারিবদ্ধ করতে */
-    justify-content: space-around; /* ৩টি বক্সের মাঝে সমান গ্যাপ রাখতে */
-    align-items: center;
-}
-
-.stat-number {
-    font-size: 48px;
-    font-weight: 800;
-    color: #5D5FEF; /* লোগোর সাথে মিল রেখে বেগুনি রঙ */
-    margin-bottom: 10px;
-}
-
-.stat-subtitle {
-    font-size: 18px;
-    color: #757575;
-    font-weight: 600;
-}
-/* কন্টাক্ট সেকশন স্টাইল */
-.contact-section {
-    padding: 100px 150px;
-}
-
-.contact-container {
-    display: flex; /* টাইটেল এবং ফর্মকে পাশাপাশি রাখার জন্য */
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 100px;
-}
-
-.contact-title-box {
-    flex: 1;
-}
-
-.contact-form-box {
-    flex: 1;
-    background: #FFFFFF;
-    padding: 20px;
-}
-
-.input-group {
-    margin-bottom: 25px;
-}
-
-.input-group label {
-    display: block;
-    font-weight: 600;
-    margin-bottom: 8px;
-    color: #181818;
-}
-
-.input-group input, 
-.input-group textarea {
-    width: 100%;
-    padding: 12px 15px;
-    border: 1px solid #E0E0E0;
-    border-radius: 8px;
-    font-size: 16px;
-    outline: none;
-    transition: 0.3s;
-}
-
-.input-group input:focus, 
-.input-group textarea:focus {
-    border-color: #5D5FEF; /* ফোকাস করলে বর্ডার কালার পরিবর্তন হবে */
-}
-
-.full-width {
-    width: 100%; /* বাটনটি পুরো চওড়া করার জন্য */
-}
-/* ইউজার ফিডব্যাক সেকশন স্টাইল */
-.feedback-section {
-    padding: 80px 150px;
-}
-
-.feedback-grid {
-    display: flex;
-    justify-content: center; /* কার্ডগুলোকে মাঝখানে রাখার জন্য */
-    gap: 30px;
-    margin-top: 50px;
-}
-
-.review-card {
-    background: #FFFFFF;
-    border: 1px solid #E0E0E0;
-    padding: 30px;
-    border-radius: 16px;
-    width: 380px; /* কার্ডের চওড়া নির্ধারণ */
-    transition: transform 0.3s ease;
-}
-
-.review-card:hover {
-    transform: translateY(-10px); /* হোভার করলে একটু উপরে উঠবে */
-}
-
-.star-rating {
-    margin-bottom: 15px;
-}
-
-.star-rating img {
-    width: 20px; /* স্টার আইকনের সাইজ */
-    margin-right: 2px;
-}
-
-.review-title {
-    font-size: 20px;
-    font-weight: 700;
-    margin-bottom: 15px;
-    color: #181818;
-}
-
-.review-text {
-    font-size: 16px;
-    color: #757575;
-    line-height: 1.6;
-    margin-bottom: 25px;
-}
-
-.reviewer-info {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.reviewer-img {
-    width: 45px;
-    height: 45px;
-    border-radius: 50%; /* ইমেজ গোল করার জন্য */
-}
-
-.reviewer-name {
-    font-weight: 700;
-    font-size: 16px;
-    color: #181818;
-}
-
-.review-date {
-    font-size: 14px;
-    color: #A0A0A0;
 }
