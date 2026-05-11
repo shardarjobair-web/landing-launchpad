@@ -151,3 +151,216 @@
     color: #757575;
     font-weight: 600;
 }
+/* ফিডব্যাক সেকশন স্টাইল */
+.feedback-section {
+    padding: 100px 150px;
+    background-color: #F8F9FF; /* হালকা ব্যাকগ্রাউন্ড */
+}
+/* ফিডব্যাক সেকশনের টাইটেল সেন্টার করার জন্য */
+.feedback-section .section-title {
+    text-align: center; /* লেখাটিকে মাঝখানে আনবে */
+    margin-bottom: 50px; /* নিচের কার্ডগুলো থেকে একটু দূরত্ব তৈরি করবে */
+    font-size: 48px; /* ডিজাইনের সাথে মিল রেখে সাইজ */
+    font-weight: 800;
+    color: #181818;
+}
+
+.feedback-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.review-card {
+    background: #FFFFFF;
+    padding: 35px;
+    border-radius: 16px;
+    flex: 1;
+    border: 1px solid #f0f0f0;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+}
+
+.stars {
+    color: #FFB800; /* সোনালী রঙের স্টার */
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.review-heading {
+    font-size: 22px;
+    font-weight: 700;
+    color: #181818;
+    margin-bottom: 10px;
+}
+
+.review-desc {
+    color: #474747;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+.reviewer-meta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.reviewer-text .name {
+    font-weight: 700;
+    color: #181818;
+    margin: 0;
+}
+
+.reviewer-text .date {
+    font-size: 14px;
+    color: #A0A0A0;
+    margin: 0;
+} 
+
+/* ফোকাস সেকশনটি সেন্টার করার জন্য */
+.focus-section {
+    display: flex;
+    flex-direction: column; /* এলিমেন্টগুলো উপর-নিচ করার জন্য */
+    align-items: center;    /* অনুভূমিকভাবে (Horizontally) সেন্টার করবে */
+    justify-content: center; /* লম্বালম্বিভাবে সেন্টার করবে */
+    text-align: center;      /* ভেতরের সব টেক্সট সেন্টার করবে */
+    padding: 80px 20px;     /* সেকশনের উপরে ও নিচে গ্যাপের জন্য */
+}
+
+.focus-content {
+    max-width: 700px;       /* টেক্সটগুলো যেন খুব বেশি ছড়িয়ে না যায় */
+    margin-bottom: 40px;    /* বাটনের নিচে ইমেজের সাথে গ্যাপের জন্য */
+}
+
+.focus-title {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.focus-subtitle {
+    font-size: 18px;
+    color: #757575;
+    margin-bottom: 30px;
+}
+
+/* বড় ইমেজটির জন্য স্টাইল */
+.focus-main-image {
+    width: 100%;
+    max-width: 1140px; /* ফিগমা অনুযায়ী উইডথ */
+    margin: 0 auto;    /* মাঝখানে রাখার জন্য */
+    display: block;    /* ডিসপ্লে নিশ্চিত করতে */
+}
+
+.focus-main-image img {
+    width: 100%;       /* কন্টেইনার অনুযায়ী বড় হবে */
+    height: auto;
+    border-radius: 24px;
+    display: block;    /* ইনলাইন এলিমেন্ট জনিত সমস্যা এড়াতে */
+}
+/* Contact Section Styles */
+.contact-section {
+    padding: 100px 150px;
+    background-color: #f8faff; /* স্লাইট ব্যাকগ্রাউন্ড কালার */
+}
+
+.contact-left .contact-title {
+    font-size: 80px; /* ছবির মতো অনেক বড় ফন্ট সাইজ */
+    font-weight: 800; /* এক্সট্রা বোল্ড */
+    line-height: 1.1; /* দুই লাইনের মাঝখানের গ্যাপ কমানোর জন্য */
+    color: #181818; /* গাঢ় কালো রঙ */
+    margin: 0;
+    text-align: left; /* বাম দিকে এলাইন থাকবে */
+}
+
+/* কন্টেইনার ফ্লেক্সবক্স নিশ্চিত করুন যেন এটি বাম পাশে থাকে */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 100px 150px;
+}
+
+.contact-right {
+    width: 50%;
+    max-width: 500px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #181818;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.contact-form textarea {
+    height: 120px;
+    resize: none;
+}
+
+.get-in-touch-btn {
+    width: 100%;
+    padding: 18px;
+    cursor: pointer;
+}
+
+/* Footer Section Styles */
+.footer-section {
+    padding: 80px 20px;
+    text-align: center;
+    border-top: 1px solid #eee;
+}
+
+.footer-logo {
+    font-size: 64px;
+    color: #5d5dff; /* লোগো কালার */
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.footer-subtitle {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    color: #757575;
+    line-height: 1.6;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #757575;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #5d5dff;
+}
